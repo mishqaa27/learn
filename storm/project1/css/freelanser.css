@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+div {
+    box-sizing: border-box;
+}
+header {
+    background: url("../img/Photo0.jpg") no-repeat center top / cover;
+
+}
+.clearfix {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.logo {
+    width: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:#fa5c65;
+    text-align: center;
+    height: 75px;
+    padding-top: 30px;
+}
+.logo:before{
+    content: 'Freelanser';
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.logo:after {
+    content:'.';
+    color: #111;
+    font-size: 25px;
+    margin-left: -5px;
+}
+.start {
+    float: right;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-top: -40px;
+}
+.menu li {
+    float: left;
+    display: block;
+
+}
+.menu li a {
+    color: #263742;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-right: 35px;
+    font-weight: bold;
+    display: block;
+}
+.title__first{
+    font-size: 48px;
+    color: #314a5b;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 360px;
+}
+.title__first:after{
+    content: '.';
+    font-size: 48px;
+    font-weight: bold;
+    color:#FA5C65;
+    margin-left: -10px;
+}
+.description {
+    color: #314a5b;
+    font-size: 20px;
+    text-align: left
+}
+.button {
+    background:#fa5c65;
+    width: 170px;
+    height: 60px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 350px;
+}
+.services {
+    margin-top: 90px;
+}
+.services__item{
+    width: 260px;
+    height: 170px;
+    float: left;
+    text-align: left;
+    line-height: 1.5em;
+
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color:  #314a5b;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto;
+}
+.services__item p {
+    font-size: 15px;
+    color:  #8a8b8e;
+
+}
+.services__item:last-child{
+    float: right;
+}
+.services__item:nth-child(2){
+    margin-left: 55px;
+}
+.services__item a {
+
+    color: #f0454c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.services__item a:after{
+    content: "\2192";
+    margin-left: 5px;
+    font-size: 20px;
+    vertical-align: center;
+}
+.portfolio {
+    margin-top: 125px;
+}
+
+.portfolio__item h2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+.portfolio__item h3 {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 15px;
+    color:  #314a5b;
+
+}
+ p {
+    text-align: left;
+    font-size: 14px;
+    color:  #8a8b8e;
+    line-height: 1.5em;
+    margin-bottom: 25px;
+
+}
+.portfolio__item a {
+    color: #f0454c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+}
+.portfolio__item a:after{
+    content: '\2192';
+    margin-left: 5px;
+    font-size: 20px;
+    vertical-align: center;
+}
+.MacBook {
+    margin-right: 130px;
+}
+.our__team{
+    margin-top: 110px
+}
+.our__team h2:after{
+    content: '.';
+    font-size: 25px;
+    color:#FA5C65;
+    margin-left: -5px;
+
+}
+.our__team p {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.teamwork{
+    float: left;
+    margin-top:50px ;
+}
+.teamwork h3{
+    margin: 0 auto;
+    color: #f2666b;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.teamwork p{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.teamwork:last-child{
+    float: right;
+}
+.teamwork:nth-child(2){
+    margin-left: 70px;
+}
+.more{
+    margin-top: 70px;
+}
+.more a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    float:right;
+    color:#F0454C;
+
+}
+.more a:after{
+    content: '\2192';
+    margin-left: 5px;
+    font-size: 20px;
+    vertical-align: center;
+    font-weight: bold;
+}
+
+.fottering{
+    border-top: 1px solid #cccccc;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+.fottering img {
+    float: left;
+    margin-right: 25px;
+}
+.free{
+    float: right;
+    color: #cccccc;
+    font-size: 14px;
+}
