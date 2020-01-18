@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#map {
+  width: 600px;
+  height: 400px;
+}
+#btn {
+  margin-top: 10px;
+}
+#mark {
+  margin-top: 50px;
+}

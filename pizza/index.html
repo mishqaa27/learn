@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pizza</title>
+</head>
+
+<body>
+  <div class="pizza">Hello World!</div>
+
+  <form method="POST" enctype="application/x-www-form-urlencoded" action="https://pizza.example.com/order.cgi">
+    <p>
+      <label for="">Customer name: <input type="text" required autocomplete="shiping name" name="custname" /></label>
+    </p>
+    <p>
+      <label for="">Telephone <input type="tel" autocomplete="shiping tel" name="custtel" /></label>
+    </p>
+    <p>
+      <label for="">E-mail adress <input type="email" autocomplete="shiping email" name="custemail" /></label>
+    </p>
+    <fieldset>
+      <legend>Pizza size :</legend>
+      <p>
+        <label for=""><input type="radio" required name="size" value="Small" />Small
+        </label>
+      </p>
+      <p>
+        <label for=""><input type="radio" required name="size" value="Medium" />Medium</label>
+      </p>
+      <p>
+        <label for=""><input type="radio" required name="size" value="Large" />Large</label>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Pizza toppings :</legend>
+      <p>
+        <label for=""> <input type="checkbox" value="Bacon" />Bacon</label>
+      </p>
+      <p>
+        <label for="">
+          <input type="checkbox" value="Extra Cheese" />Extra Cheese</label>
+      </p>
+      <p>
+        <label for=""> <input type="checkbox" value="Onion" />Onion</label>
+      </p>
+      <p>
+        <label for=""><input type="checkbox" value="Mushroom" />Mushroom</label>
+      </p>
+    </fieldset>
+    <p>
+      <label for="">Preferred delivery time:
+        <input type="time" min="11:00" max="21:00" step="900" name="delivery" /></label>
+    </p>
+    <p>
+      <label for="">Delivery instructions: <textarea name="comments" maxlength=1000> </textarea>
+      </label>
+    </p>
+    <p><button>Submit order</button></p>
+  </form>
+  <script src="pizza.js"></script>
+</body>
+
+</html>

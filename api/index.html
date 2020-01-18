@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Maps</title>
+  <link rel="stylesheet" href="css/mymap.css" />
+</head>
+
+<body>
+  <header id="menu"></header>
+  <section>
+    <div id="map">Мой район!</div>
+
+    <form action="http://127.0.0.1:5500/api/index.html" id="mark" method="GET">
+      <label for="mark"> Первая координата <input name="let" /></label>
+      <label for="mark"> Вторая координата <input name="lot" /></label>
+      <label for="mark"> Название <input name="name" /></label>
+      <button id="btn">Добавить метку</button>
+    </form>
+  </section>
+  <footer></footer>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=653db3d8-c653-4ba8-867d-7ffe7bbef4a6&lang=ru_RU"></script>
+  <script src="js/mymap.js"></script>
+</body>
+
+</html>
