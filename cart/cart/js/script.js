@@ -9,26 +9,38 @@ window.addEventListener('DOMContentLoaded', function () {
          field = document.createElement('div'),
          heading = document.createElement('h2'),
          closeBtn = document.createElement('button');
+      let deleteBtn = document.createElement('button');
 
 
       cart.classList.add('cart');
       field.classList.add('cart-field');
       closeBtn.classList.add('close');
+      deleteBtn.classList.add('delete');
 
       heading.textContent = "В нашей корзине:";
       closeBtn.textContent = "Закрыть";
+      deleteBtn.textContent = "Удалить товар";
 
       document.body.appendChild(cart);
       cart.appendChild(heading);
       cart.appendChild(field);
       cart.appendChild(closeBtn);
+      cart - field.appendChild(deleteBtn);
+
+
    }
 
    createCart();
 
+   // function deleteProduct() {
+
+   // }
+
+   // deleteProduct();
+
    let field = document.querySelector('.cart-field'),
       cart = document.querySelector('.cart'),
-      closebtn = document.querySelector('.close');
+      closeBtn = document.querySelector('.close');
 
    function openCart() {
       cart.style.display = 'block';
@@ -37,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function () {
       cart.style.display = 'none';
    }
    openBtn.addEventListener('click', openCart);
-   closebtn.addEventListener('click', closeCart);
+   closeBtn.addEventListener('click', closeCart);
 
    // for (let i = 0; i < buttons.length; i++) {
    //    buttons[i].addEventListener('click', function () {
@@ -57,6 +69,6 @@ window.addEventListener('DOMContentLoaded', function () {
          products[i].remove();
       });
    });
-// Создать в корзине кнопку удалить товар, так что бы товар удалялся из корзины
+   // Создать в корзине кнопку удалить товар, так что бы товар удалялся из корзины
 
 });
