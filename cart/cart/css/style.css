@@ -1,34 +1,37 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 main {
 	width: 100%;
 	height: 900px;
 	padding-top: 50px;
-    background: url('../img/food-bg.jpg') center center no-repeat;
-    background-size: cover;
+	background: url('../img/food-bg.jpg') center center no-repeat;
+	background-size: cover;
 }
+
 .open {
 	display: block;
 	margin: 0 auto;
 	width: 250px;
 	height: 50px;
 	margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 4px;
+	background-color: #fff;
+	border-radius: 4px;
 	font-size: 22px;
 	text-align: center;
 	line-height: 50px;
-    cursor: pointer;
-    transition: 0.3s all;
+	cursor: pointer;
+	transition: 0.3s all;
 }
+
 .open:hover {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
+
 .shop {
 	display: flex;
 	justify-content: center;
@@ -38,18 +41,20 @@ main {
 	min-height: 560px;
 	margin: 0 auto;
 	padding: 60px 30px;
-    background-color: rgba(0,0,0,.7);
-    border-radius: 8px;
+	background-color: rgba(0, 0, 0, .7);
+	border-radius: 8px;
 }
+
 .product {
 	width: 23%;
 	min-height: 200px;
 	margin-right: 1%;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 30px rgba(256,256,256, .4);
+	background-color: #fff;
+	border-radius: 8px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 30px rgba(256, 256, 256, .4);
 }
+
 .product .product-card {
 	display: block;
 	width: 90%;
@@ -57,36 +62,41 @@ main {
 	margin: 0 auto;
 	margin-top: 5%;
 }
+
 .product .product-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
+
 button {
 	display: block;
 	width: 120px;
 	height: 30px;
 	margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000;
-    border-radius: 4px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+	border-radius: 4px;
 	cursor: pointer;
 }
+
 .cart {
 	display: none;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
-	background-color: rgba(0,0,0,.9)
+	background-color: rgba(0, 0, 0, .9)
 }
+
 h2 {
 	color: #fff;
 	font-size: 30px;
 	text-align: center;
 	margin-top: 30px;
 }
+
 .cart .cart-field {
 	width: 80%;
 	height: 600px;
@@ -98,6 +108,7 @@ h2 {
 	margin-top: 30px;
 	border: 1px solid white;
 }
+
 .close {
 	width: 200px;
 	height: 50px;
@@ -106,9 +117,14 @@ h2 {
 	margin-top: 10px;
 }
 
-
-
-
-
-
-
+.delete {
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	cursor: pointer;
+}
