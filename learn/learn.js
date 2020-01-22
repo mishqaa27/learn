@@ -1,4 +1,4 @@
-'use strict';
+'use strick';
 // if (num < 49) {
 //    console.log('Неверно!');
 // } else if (num > 100) {
@@ -27,9 +27,15 @@
 // }
 
 
+
+// while (num < 55) {
+//    console.log(num);
+//    num++;
+// }
 let num = 50;
-while (num < 55) {
+do {
    console.log(num);
    num++;
-}
+} 
+while (num < 55);
 

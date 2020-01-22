@@ -1,3 +1,4 @@
+'use strick';
 let money = +prompt('Ваш бюджет на месяц?', ""),
    time = prompt('Введите дату в формате YYYY-MM-DD', "");
 
@@ -10,15 +11,53 @@ let appData = {
    timeData: time
 };
 
-let a1 = prompt('Введите обязательную статью расходов в этом месяце', ""),
-   b1 = +prompt('Во сколько обойдется?', ""),
-   a2 = prompt('Введите обязательную статью расходов в этом месяце', ""),
-   b2 = +prompt('Во сколько обойдется?', "");
+// let a = prompt('Введите обязательную статью расходов в этом месяце', ""),
+//     b = +prompt('Во сколько обойдется?', "");   
+// do {
 
-appData.expenses[a1] = b1;
+//    if ((typeof (a)) === 'string' && (typeof (a)) != null && (typeof (b)) != null && a != "" && b != "" && a.length < 50) {
+//       console.log('done');
 
-appData.expenses[a2] = b2;
+//       appData.expenses[a] = b;
+//    }
 
-console.log(alert(appData.budget / 30));
 
-console.log(appData);
+// } while (a, b == 2);
+
+
+// let a = prompt('Введите обязательную статью расходов в этом месяце', ""),
+//    b = +prompt('Во сколько обойдется?', "");
+
+// while (a, b <= 2) {
+//    if ((typeof (a)) === 'string' && (typeof (a)) != null && (typeof (b)) != null && a != "" && b != "" && a.length < 50) {
+//       console.log('done');
+
+//       appData.expenses[a] = b;
+//    }
+// }
+
+for (let i = 0; i < 2; i++) {
+   let a = prompt('Введите обязательную статью расходов в этом месяце', ""),
+      b = prompt('Во сколько обойдется?', "");
+
+
+   if ((typeof (a)) === 'string' && (typeof (a)) != null && (typeof (b)) != null && a != "" && b != "" && a.length < 50) {
+      console.log('done');
+      appData.expenses[a] = b;
+
+   } else {
+
+      a = prompt('Введите обязательную статью расходов в этом месяце', "");
+      b = prompt('Во сколько обойдется?', "");
+      console.log('hell');
+      appData.expenses[a] = b;
+      i = i = 1;
+
+
+   }
+}
+
+appData.moneyPerDay = appData.budget / 30;
+
+alert("Ежедневый бюджет: " + appData.moneyPerDay);
+
