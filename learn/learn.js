@@ -1,4 +1,4 @@
-'use strick';
+"use strict";
 // if (num < 49) {
 //    console.log('Неверно!');
 // } else if (num > 100) {
@@ -32,10 +32,34 @@
 //    console.log(num);
 //    num++;
 // }
-let num = 50;
-do {
-   console.log(num);
-   num++;
-} 
-while (num < 55);
+// let num = 50;
+// do {
+//    console.log(num);
+//    num++;
+// } 
+// while (num < 55);
+// let num = 20; // Это переменная глобальная .
 
+// function showFirstMessage(text) {
+//    alert(text);
+//    let num = 10; // это переменная локальная, ее видно только в функиции.
+//    console.log(num);
+// }
+ // Замыкание - это функция вместо со всеми внешними переменными которые ей доступны. 
+// showFirstMessage('Hello World');
+// console.log(num);
+
+function calc(a,b){
+   return(a + b);
+   
+} // function declaration - объявлена в потоке кода Б их можно вызывать до начала их объявления
+console.log(calc(3,5));
+console.log(calc(2,8));
+
+let retVar = function(){
+   let num = 50;
+   return num;
+};
+// function expression - это когда функциию присваиванием к переменной, создается только тогда , когда код до нее доходит, ее нельзя вызвать за ранее.
+let anotherNum = retVar();
+console.log(anotherNum);
