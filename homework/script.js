@@ -69,17 +69,25 @@ function checkSavings() {
 }
 checkSavings();
 
+// function chooseOptExpenses() {
+//    for (let i = 0; i < 3; i++) {
+//       let costs = prompt("Статья необязательных расходов:"),
+//          costsMoney = +prompt("Сколько обойдутся расходы");
+//       if ((typeof (costs)) === 'string' && (typeof (costs)) != null && (typeof (costsMoney)) != null && costs != "" && costsMoney != "" && costs.length < 50) {
+
+//          appData.optionalExpenses[costs] = costsMoney;
+//       } else {
+//          i--;
+//       }
+//    }
+// }
 function chooseOptExpenses() {
-   for (let i = 0; i < 3; i++) {
-      let costs = prompt("Статья необязательных расходов:"),
-         costsMoney = +prompt("Сколько обойдутся расходы");
-      if ((typeof (costs)) === 'string' && (typeof (costs)) != null && (typeof (costsMoney)) != null && costs != "" && costsMoney != "" && costs.length < 50) {
-
-         appData.optionalExpenses[costs] = costsMoney;
-      } else {
-         i--;
-      }
+   for (let i = 1; i <= 3; i++) {
+      let costs = prompt('Статья необязательных расходов');
+      appData.optionalExpenses[i] = costs;
+      console.log(appData.optionalExpenses);
    }
-
 }
+
+
 chooseOptExpenses();
