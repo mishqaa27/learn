@@ -94,8 +94,3 @@ for (let key in appData) {
 
 
 
-
-// while (items != "string" && items == '' && items == null) {
-   //    items = prompt('Что принесет вам доп. доход? (перечислите через запятую)', '')
-   //    appData.income = items.split(', ');
-   // }

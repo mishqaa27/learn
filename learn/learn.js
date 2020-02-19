@@ -87,18 +87,27 @@ for (let key in options) {
 }
 console.log(Object.keys(options).length);
 
-let arr = [1,2,3,4,5];
+let arr = [1, 2, 3, 4, 5];
 
 arr.pop(); // удалить последний элемент
 arr.push("5"); // запушить в конец массива
 arr.shift(); // удаляет 1 элемент
 arr.unshift('1'); // Добавляет 1 элемент
 
-for (let i = 0 ; i <arr.length; i++) {
+for (let i = 0; i < arr.length; i++) {
    console.log(arr[i]);
 }
 
-arr.forEach(function(item, i , mass){
+arr.forEach(function (item, i, mass) {
    console.log(i + ": " + item + " (массив: " + mass + " )");
 
 });
+// test
+console.log([] + false - null + true);
+console.log([] + 1 + 2);
+alert("1"[0]);
+console.log(2 && 1 && null && 0 && undefined);
+console.log(alert(null || 2 && 3 || 4));
+alert( +"Infinity" );
+console.log("Ёжик" > "яблоко");
+console.log(0 || "" || 2 || undefined || true || falsе);
